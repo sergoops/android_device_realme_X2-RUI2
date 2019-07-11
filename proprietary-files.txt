@@ -1098,7 +1098,6 @@ vendor/bin/pd-mapper
 vendor/bin/qrtr-ns
 vendor/etc/sec_config
 vendor/etc/seccomp_policy/qti-systemd.policy
-vendor/bin/ssr_setup
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib64/libdiag.so
@@ -1155,7 +1154,6 @@ vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qti
 vendor/bin/rmt_storage
-vendor/bin/subsystem_ramdump
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml

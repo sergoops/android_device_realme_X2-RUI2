@@ -95,6 +95,13 @@ dalvik.vm.dex2oat-threads=8
 ro.sys.fw.dex2oat_thread_count=8
 ro.vendor.qti.am.reschedule_service=true
 
+# App launch prefetching (IORap)
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+ro.iorapd.enable=true
+
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=true

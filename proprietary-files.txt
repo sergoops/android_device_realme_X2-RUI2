@@ -1698,7 +1698,7 @@ system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so
 system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so
 system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so
 system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so
-system_ext/lib64/lib-imsvideocodec.so|06a839d10d17e59425972cc4076059047364f3b3
+system_ext/lib64/lib-imsvideocodec.so|d41c3f522baf31a2f7f753d24437d8cf38febcc4
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so

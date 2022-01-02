@@ -943,6 +943,9 @@ odm/lib64/libwvhidl.so
 odm/lib/libqsee_keybox_ca.so
 odm/lib64/libqsee_keybox_ca.so
 
+# DRM - from Redmi/lmi/lmi:11/RKQ1.200826.002/20.10.19:user/release-keys
+vendor/lib64/libspl.so|0fa8c0711f72fc8a914dce044cf8dddd79ee62e1
+
 # DSP
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc

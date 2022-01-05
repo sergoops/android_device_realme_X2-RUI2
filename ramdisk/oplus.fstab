@@ -1,0 +1,11 @@
+#<src>                                            <mnt_point>                    <type>  <mnt_flags and options>                                  <fs_mgr_flags>
+#/vendor/euclid/odm.img                     		/mnt/product/odm               ext4     ro,barrier=1                     nofail,first_stage_mount
+#/mnt/product/odm                                /odm                           none     ro,bind                          nofail,first_stage_mount
+
+#/vendor/odm                     				/mnt/product/odm               ext4        ro,barrier=1                     nofail,first_stage_mount
+#/mnt/product/odm                                /odm                           none     ro,bind                          nofail,first_stage_mount	
+
+#ifdef OPLUS_FEATURE_STORAGE
+#Runsheng.Pei@ANDROID.STORAGE.0, 2017/12/29, Add for new reserve partition
+/dev/block/by-name/opporeserve2                 /mnt/vendor/opporeserve           ext4     nosuid,nodev,noatime,barrier=1                       wait,check,first_stage_mount,nofail
+#endif

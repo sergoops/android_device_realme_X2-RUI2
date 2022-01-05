@@ -1,6 +1,18 @@
+# Audio
+audio.deep_buffer.media=true
+audio.offload.buffer.size.kb=32
+audio.offload.gapless.enabled=true
+audio.offload.video=true
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+ro.af.client_heap_size_kbyte=7168
+ro.config.vc_call_vol_steps=11
+ro.qc.sdk.audio.fluencetype=none
+
 # Bluetooth
 vendor.bluetooth.soc=cherokee
-vendor.qcom.bluetooth.soc=cherokee
+ro.bluetooth.library_name=libbluetooth.so
 
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
@@ -14,29 +26,33 @@ persist.vendor.data.profile_update=true
 
 # DPM
 persist.vendor.dpm.feature=1
-persist.vendor.dpm.loglevel=0
-persist.vendor.dpm.nsrm.bkg.evt=3955
+
+# Dalvik
+dalvik.vm.dexopt.secondary=true
 
 # Graphics
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.has_wide_color_display=true
-ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-ro.surface_flinger.max_virtual_display_dimension=4096
-ro.surface_flinger.protected_contents=true
-ro.surface_flinger.use_color_management=true
-ro.surface_flinger.vsync_event_phase_offset_ns=2000000
-ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
-ro.surface_flinger.wcg_composition_dataspace=143261696
-persist.demo.hdmirotationlock=false
-persist.hwc.enable_vds=1
+ro.surface_flinger.has_HDR_display=false
+ro.surface_flinger.use_color_management=false
+ro.surface_flinger.has_wide_color_display=false
+ro.sf.blurs_are_expensive=0
+ro.surface_flinger.supports_background_blur=0
 
 # Override Display Density
 ro.sf.lcd_density=440
 
 # Media
+debug.stagefright.ccodec=1
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-audio.offload.video=true
+ro.media.recorder-max-base-layer-fps=60
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
@@ -44,23 +60,48 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 #Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
 
-# system prop for NFC DT
+# NFC
+persist.nfc.smartcard.recorder.enable=true
 ro.nfc.port=I2C
-
-# Radio
-DEVICE_PROVISIONED=1
-persist.sys.fflag.override.settings_network_and_internet_v2=true
-persist.vendor.ims.disableADBLogs=1
-persist.vendor.ims.disableIMSLogs=1
-persist.vendor.radio.enable_temp_dds=true
-persist.vendor.radio.force_on_dc=true
-ril.subscription.types=RUIM
-use.voice.path.for.pcm.voip=true
 
 # Time
 persist.vendor.delta_time.enable=true
 
+# RIL
+DEVICE_PROVISIONED=1
+persist.data.df.dev_name=rmnet_usb0
+persist.sys.log.radio=20|10
+persist.radio.hvolte.enable=1
+keyguard.no_require_sim=true
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.dl_mode=5
+persist.data.df.iwlan_mux=9
+persist.data.df.mux_count=8
+persist.data.df.ul_mode=5
+persist.data.wda.enable=true
+persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
+ril.subscription.types=NV,RUIM
+ro.telephony.default_network=22,22
+ro.vendor.use_data_netmgrd=true
+telephony.lteOnCdmaDevice=1
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.sys.fflag.override.settings_provider_model=false
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # Wireless display
-debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24

@@ -5,7 +5,7 @@
  *  for attribution purposes only.
  *
  * Copyright (C) 2012 The Android Open Source Project
- * Copyright (C) 2018-2019 The LineageOS Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,24 +23,16 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Realme X2"
-
-#pragma push_macro("PROPERTY_VALUE_MAX")
-
-#include <cutils/properties.h>
+#include <stdint.h>
 #include <string.h>
 
 #include "osi/include/osi.h"
 
+#define BTM_DEF_LOCAL_NAME "Realme X2"
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16
 #define BLE_VND_INCLUDED   TRUE
-// Skips conn update at conn completion
-#define BT_CLEAN_TURN_ON_DISABLED 1
-// Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec
 #define AVDT_NUM_SEPS 12
-
-#pragma pop_macro("PROPERTY_VALUE_MAX")
 
 #endif

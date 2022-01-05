@@ -16,11 +16,14 @@
 
 cc_library_static {
     name: "libinit_x2",
-    recovery_available: true,
     srcs: ["x2.cpp"],
-    shared_libs: ["libbase"],
+    recovery_available: true,
+    whole_static_libs: ["libbase"],
+    header_libs: [
+        "libbase_headers",
+    ],
     include_dirs: [
-        "system/core/init",
-        "system/libbase/include"
+        "system/libbase/include",
+        "system/core/init"
     ]
 }

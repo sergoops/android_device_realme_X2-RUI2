@@ -258,7 +258,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
+    vendor.qti.hardware.perf@2.2.vendor:64
 
 # Power
 PRODUCT_PACKAGES += \

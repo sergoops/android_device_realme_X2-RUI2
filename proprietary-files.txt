@@ -1,4 +1,4 @@
-# All unpinned blobs extracted from 1991 F.25
+# All unpinned blobs extracted from realme/RMX1991/RMX1991CN:11/RKQ1.201112.002/1633714387511:user/release-keys (RUI2 F.26 RMX1991)
 
 # ACDB Data
 odm/etc/acdbdata/Bluetooth_cal.acdb

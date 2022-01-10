@@ -1,5 +1,4 @@
 LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.class_main.sh

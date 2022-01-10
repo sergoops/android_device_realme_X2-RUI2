@@ -311,7 +311,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/oplus.fstab:$(TARGET_COPY_OUT_ODM)/odm/etc/oplus.fstab
+    $(LOCAL_PATH)/ramdisk/oplus.fstab:$(TARGET_COPY_OUT_ODM)/etc/oplus.fstab
     
 # RenderScript
 PRODUCT_PACKAGES += \

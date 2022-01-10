@@ -169,6 +169,10 @@ debug.sf.earlyGl.app.duration=21000000
 # Graphics
 debug.sdm.support_writeback=0
 
+# Goodix fingerprint
+ro.boot.flash.locked=0
+vendor.fingerprint.cali=1
+
 # Keyguard
 keyguard.no_require_sim=true
 

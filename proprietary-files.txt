@@ -781,14 +781,8 @@ vendor/bin/mlid
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
-vendor/etc/apdr.conf
 vendor/etc/cacert_location.pem
-vendor/etc/flp.conf
-vendor/etc/gps.conf
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
-vendor/etc/izat.conf
-vendor/etc/lowi.conf
-vendor/etc/sap.conf
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/xtra_root_cert.pem
@@ -831,9 +825,6 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/libgnsspps.so
-odm/etc/gps.conf
-odm/etc/izat.conf
-odm/etc/sap.conf
 
 # IOP
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service

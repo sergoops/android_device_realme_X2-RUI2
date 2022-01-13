@@ -477,6 +477,8 @@ vendor/firmware/CAMERA_ICP.elf
 vendor/bin/hvdcp_opti
 vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
+vendor/firmware/fastchg/oplus_vooc_fw.bin
+odm/firmware/fastchg/19771/oplus_vooc_fw.bin
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
@@ -826,13 +828,6 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/libgnsspps.so
 
-# IOP
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-
 # IPA Firmware
 vendor/etc/init/ipa_fws.rc
 vendor/firmware/ipa_fws.b00
@@ -851,7 +846,6 @@ vendor/firmware/barca_notice_ring_RTP_122.bin
 vendor/firmware/dpAP_full.mbn
 vendor/firmware/dpAP_mini.mbn
 vendor/firmware/dpMSA.mbn
-vendor/firmware/fastchg/oplus_vooc_fw.bin
 vendor/firmware/image/oppoeid.b00
 vendor/firmware/image/oppoeid.b01
 vendor/firmware/image/oppoeid.b02
@@ -1061,8 +1055,10 @@ vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Performance
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/bin/msm_irqbalance
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
@@ -1085,7 +1081,12 @@ vendor/lib64/libperfioctl.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
+vendor/lib64/libqti-utils.so
+vendor/lib64/libreffeature.so
 vendor/lib64/libskewknob.so
+vendor/lib64/libqti-iopd-client.so
+vendor/lib64/libqti-iopd.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # Permissions
 etc/permissions/privapp-permissions-qti.xml
@@ -1315,7 +1316,6 @@ odm/etc/samsung1024_ams641rw16_srgb_eyeprotect_data.xml
 odm/firmware/tp/19771/FW_S3706_SAMSUNG.img
 odm/firmware/tp/19771/FW_S3706_SAMSUNG_FAE.img
 odm/firmware/tp/19771/LIMIT_S3706_SAMSUNG.img
-odm/firmware/fastchg/19771/oplus_vooc_fw.bin
 
 # Display-calibration
 vendor/etc/qdcm_calib_data_oppo19031samsung_AMS655LSI60_1080_2400_cmd_mode_dsi_panel.xml
@@ -1485,6 +1485,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
 # Vibrator
+vendor/etc/excluded-input-devices.xml
 vendor/firmware/aw8697_About_School_RTP_17.bin
 vendor/firmware/aw8697_Appear_channel_RTP_coloros7_123.bin
 vendor/firmware/aw8697_Bliss_RTP_18.bin

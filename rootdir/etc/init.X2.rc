@@ -10,6 +10,19 @@ on init
     write /proc/ui_soc_decimal 1
 
 on boot
+    # TEMP: Enable dc-dimming by default
+    chmod 0666 /sys/kernel/oppo_display/dimlayer_bl_en
+    chown system system /sys/kernel/oppo_display/dimlayer_bl_en
+    write /sys/kernel/oppo_display/dimlayer_bl_en 1
+
+    # Fix permissions of double tap node
+    chown system system /proc/touchpanel/double_tap_enable
+    chmod 0644 /proc/touchpanel/double_tap_enable
+
+    # OTG
+    chown system system /sys/class/power_supply/usb/otg_switch
+    chmod 0644 /sys/class/power_supply/usb/otg_switch
+
     # selinux nodes, hide permissive state
     chmod 0640 /sys/fs/selinux/enforce
     chmod 0440 /sys/fs/selinux/policy 

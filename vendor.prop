@@ -135,6 +135,7 @@ ro.vendor.qti.va_aosp.support=1
 # Display
 ro.vendor.display.sensortype=2
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
+debug.mdpcomp.logs=0
 debug.egl.hw=0
 debug.sf.latch_unsignaled=1
 debug.sf.disable_backpressure=1
@@ -159,6 +160,7 @@ vendor.display.disable_ui_3d_tonemap=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 vendor.gralloc.disable_ubwc=0
+vendor.display.qdcm.mode_combine=1
 
 # App/sf phase offset as durations
 debug.sf.use_phase_offsets_as_durations=1

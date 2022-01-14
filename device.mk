@@ -129,10 +129,10 @@ PRODUCT_PACKAGES += \
     hwcomposer.sm6150 \
     libdisplayconfig.qti \
     libqdMetaData \
-    libtinyxml \
     libgui_vendor \
     memtrack.sm6150 \
-    vendor.display.config@2.0
+    vendor.display.config@2.0 \
+    libvulkan
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-impl \

@@ -23,8 +23,13 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="otg_category"
-        android:title="@string/otg">
+        android:key="misc_category"
+        android:title="@string/misc_title">
+
+        <SwitchPreference
+            android:key="dc"
+            android:summary="@string/dc_summary"
+            android:title="@string/dc_title" />
 
         <SwitchPreference
             android:key="otg"

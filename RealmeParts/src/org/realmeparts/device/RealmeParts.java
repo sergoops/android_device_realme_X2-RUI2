@@ -65,12 +65,16 @@ public class RealmeParts extends PreferenceFragment implements
     public static final String PREF_OTG = "otg";
     public static final String OTG_PATH = "/sys/class/power_supply/usb/otg_switch";
 
+    public static final String PREF_DC = "dc";
+    public static final String DC_PATH = "/sys/kernel/oppo_display/dimlayer_bl_en";
+
     private Context mContext;
     private SharedPreferences mPrefs;
 
     private Preference mDozePref;
     private Preference mGesturesPref;
     private SwitchPreference mOTG;
+    private SwitchPreference mDC;
     private VibratorStrengthPreference mVibratorStrength;
 
     @Override
@@ -104,6 +108,10 @@ public class RealmeParts extends PreferenceFragment implements
             }
         });
 
+        mDC = (SwitchPreference) findPreference(PREF_DC);
+        mDC.setChecked(mPrefs.getBoolean(PREF_DC, false));
+        mDC.setOnPreferenceChangeListener(this);
+
         mOTG = (SwitchPreference) findPreference(PREF_OTG);
         mOTG.setChecked(mPrefs.getBoolean(PREF_OTG, false));
         mOTG.setOnPreferenceChangeListener(this);
@@ -136,6 +144,12 @@ public class RealmeParts extends PreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         final String key = preference.getKey();
+        if (preference == mDC) {
+            mPrefs.edit()
+                    .putBoolean(PREF_DC, (Boolean) newValue).commit();
+            enableDC((Boolean) newValue);
+            return true;
+        }
         if (preference == mOTG) {
             mPrefs.edit()
                     .putBoolean(PREF_OTG, (Boolean) newValue).commit();
@@ -143,6 +157,12 @@ public class RealmeParts extends PreferenceFragment implements
             return true;
         }
         return true;
+    }
+
+    public static void enableDC(boolean enable) {
+            if (Utils.fileExists(DC_PATH)) {
+                Utils.writeLine(DC_PATH, enable ? "1" : "0");
+            }
     }
 
     public static void enableOTG(boolean enable) {

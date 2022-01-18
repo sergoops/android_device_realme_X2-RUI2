@@ -1,6 +1,9 @@
 # Charger
 ro.charger.enable_suspend=true
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # LMKD
 ro.config.low_ram=false
 

@@ -734,7 +734,6 @@ vendor/lib64/libsdmcore.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libhdr_tm.so
-vendor/lib64/libsdmutils.so
 vendor/lib64/hw/hwcomposer.sm6150.so
 
 # Graphics firmware
@@ -1035,6 +1034,7 @@ vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Performance
+system_ext/etc/seccomp_policy/perfservice.policy
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/bin/msm_irqbalance
@@ -1097,6 +1097,7 @@ vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/bin/qrtr-ns
 vendor/etc/sec_config
+vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/bin/ssr_setup
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so

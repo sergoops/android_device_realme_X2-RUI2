@@ -92,6 +92,8 @@ on early-init
     #endif /*OPLUS_BUG_STABILITY*/
 
 on init
+    # Change permissions for diag lib.
+    chmod 0666 /dev/diag
 
     # Support legacy paths
     symlink /sdcard /mnt/sdcard

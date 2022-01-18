@@ -133,6 +133,8 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 ro.vendor.qti.va_aosp.support=1
 
 # Display
+persist.demo.hdmirotationlock=false
+persist.sys.sf.color_saturation=1.0
 ro.vendor.display.ad=1
 ro.vendor.display.sensortype=2
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
@@ -197,6 +199,7 @@ ro.vendor.perf.scroll_opt=true
     
 # PASR
 vendor.power.pasr.enabled=true
+vendor.pasr.activemode.enabled=true
 
 # Sensors
 persist.vendor.sensors.odl.adsp=true

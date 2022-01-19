@@ -10,6 +10,7 @@ $(call inherit-product, device/realme/X2/device.mk)
 $(call inherit-product, vendor/krypton/config/common_full_phone.mk)
 
 TARGET_BUILD_GRAPHENEOS_CAMERA := false
+TARGET_BUILD_LAWNCHAIR := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := krypton_X2

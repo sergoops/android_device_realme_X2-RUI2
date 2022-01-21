@@ -26,6 +26,10 @@ genfscon proc /qcom_flash1        u:object_r:proc_flash:s0
 # LCD
 genfscon proc /lcd_type           u:object_r:proc_lcd:s0
 
+# Oplus ALS
+genfscon proc /sensor/als_cali 						u:object_r:proc_oplus_als:s0
+genfscon proc /sensor/pressure_cali 			  	u:object_r:proc_oplus_als:s0
+
 # Oppo rf
 genfscon proc /oppo_rf            u:object_r:proc_oppo_rf:s0
 

@@ -9,6 +9,23 @@ on init
     chown system system /proc/ui_soc_decimal
     write /proc/ui_soc_decimal 1
 
+on post-fs-data
+    # For engsensor
+    chown system system /proc/sensor/als_cali/als_type
+    chown system system /proc/sensor/als_cali/blue_max_lux
+    chown system system /proc/sensor/als_cali/cali_coe
+    chown system system /proc/sensor/als_cali/green_max_lux
+    chown system system /proc/sensor/als_cali/red_max_lux
+    chown system system /proc/sensor/als_cali/row_coe
+    chown system system /proc/sensor/als_cali/white_max_lux
+    chmod 0666 /proc/sensor/als_cali/als_type
+    chmod 0666 /proc/sensor/als_cali/blue_max_lux
+    chmod 0666 /proc/sensor/als_cali/cali_coe
+    chmod 0666 /proc/sensor/als_cali/green_max_lux
+    chmod 0666 /proc/sensor/als_cali/red_max_lux
+    chmod 0666 /proc/sensor/als_cali/row_coe
+    chmod 0666 /proc/sensor/als_cali/white_max_lux
+
 on boot
     # Fix permissions (for realmeparts)
     chown system system /sys/kernel/oppo_display/dimlayer_bl_en

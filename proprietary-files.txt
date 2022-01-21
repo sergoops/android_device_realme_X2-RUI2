@@ -1314,6 +1314,11 @@ vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
 # Sensors
+odm/bin/hw/vendor-oplus-hardware-engsensor@1.0-service
+odm/etc/init/vendor-oplus-hardware-engsensor@1.0-service.rc
+odm/etc/permissions/vendor-oplus-hardware-engsensor.xml
+odm/etc/vintf/manifest/manifest_engsensor.xml
+odm/lib64/vendor.oplus.hardware.engsensor@1.0.so
 odm/etc/sensor/sensor_config.json
 vendor/bin/sensors.qti
 vendor/etc/init/init.vendor.sensors.rc
@@ -1393,6 +1398,13 @@ vendor/lib64/libsensorcal.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_registry_skel.so
+
+# Sensor-calibrate
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service

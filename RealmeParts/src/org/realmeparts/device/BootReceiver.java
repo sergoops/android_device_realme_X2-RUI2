@@ -45,7 +45,7 @@ public class BootReceiver extends BroadcastReceiver {
             TouchGestures.enableDt2w(prefs.getBoolean(
                 TouchGestures.PREF_DT2W_ENABLE, true));
             RealmeParts.enableDC(prefs.getBoolean(
-                RealmeParts.PREF_DC, true));
+                RealmeParts.PREF_DC, false));
             RealmeParts.enableOTG(prefs.getBoolean(
                 RealmeParts.PREF_OTG, false));
         }

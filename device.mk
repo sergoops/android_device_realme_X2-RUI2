@@ -219,10 +219,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.x2
-
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -364,8 +360,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libsensorndkbridge \
-    android.hardware.sensors@2.0-service.multihal_x2
+    libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \

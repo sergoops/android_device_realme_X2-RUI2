@@ -183,6 +183,8 @@ debug.sf.earlyGl.sf.duration=13500000
 debug.sf.earlyGl.app.duration=21000000
 
 # Graphics
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610

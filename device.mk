@@ -353,10 +353,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/oplus.fstab:$(TARGET_COPY_OUT_ODM)/etc/oplus.fstab
-    
-# RenderScript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
 
 # Sensors
 PRODUCT_PACKAGES += \

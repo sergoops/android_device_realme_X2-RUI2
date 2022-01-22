@@ -1,4 +1,0 @@
-#ifdef OPLUS_FEATURE_STORAGE
-#Runsheng.Pei@ANDROID.STORAGE.0, 2017/12/29, Add for new reserve partition
-/dev/block/by-name/opporeserve2                 /mnt/vendor/opporeserve           ext4     nosuid,nodev,noatime,barrier=1                       wait,check,first_stage_mount,nofail
-#endif

@@ -344,15 +344,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     ueventd.qcom.rc
 
-# Ramdisk shit
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/ramdisk/,$(TARGET_COPY_OUT_RAMDISK))
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/oplus.fstab:$(TARGET_COPY_OUT_ODM)/etc/oplus.fstab
 
 # Sensors
 PRODUCT_PACKAGES += \

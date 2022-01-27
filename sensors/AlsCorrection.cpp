@@ -48,7 +48,7 @@ static const std::string rgbw_max_lux_paths[4] = {
     PROCALS_PATH "white_max_lux",
 };
 
-bool DEBUG = true;
+bool DEBUG = false;
 
 struct als_config {
     bool hbr;

@@ -61,8 +61,6 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
     // our own functions
     void setFingerprintScreenState(const bool on);
     void setFingerprintScreenStateOff();
-    Return<void> onShowUdfpsOverlay() override;
-    Return<void> onHideUdfpsOverlay() override;
 
 private:
     bool isEnrolling;

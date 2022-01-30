@@ -126,16 +126,6 @@ PRODUCT_COPY_FILES += \
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings \
-    SystemUI
-
-ifeq ($(TARGET_BUILD_LAWNCHAIR),true)
-    PRODUCT_DEXPREOPT_SPEED_APPS += Lawnchair
-else
-    PRODUCT_DEXPREOPT_SPEED_APPS += Launcher3QuickStep
-endif
-
 # Display
 PRODUCT_PACKAGES += \
     disable_configstore \

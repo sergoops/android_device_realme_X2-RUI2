@@ -1088,6 +1088,14 @@ vendor/lib64/vendor.display.postproc@1.0.so
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 
+# QCC
+vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
+vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+
 # QMI
 etc/sysconfig/qti_whitelist.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
